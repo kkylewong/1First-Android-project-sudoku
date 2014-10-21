@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.the_final_project_2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <!--reference of icon:
+    http://www.google.co.uk/imgres?imgurl=http%3A%2F%2Fww
+    w.4pockets.com%2Fmedia_dir%2FSuperElementalLogo.png&i
+    mgrefurl=http%3A%2F%2Fwww.4pockets.com%2F&h=258&w=258&
+    tbnid=qDNF5HXuL5e2rM%3A&zoom=1&docid=F5a8yRorBHq0DM&ei
+    =_NLvU_K_OsXF0QWehoHoBg&tbm=isch&ved=0CC0QMyglMCU4ZA&i
+    act=rc&uact=3&dur=21916&page=7&start=133&ndsp=24  -->
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sudoku_icon"
+        android:label="@string/app_name"
+        >
+        <activity 
+            android:name="sudoku.controller.activities.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sudoku.controller.activities.GameActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name="sudoku.controller.activities.SecondMenu"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            
+        </activity>
+        <activity 
+            android:name="sudoku.model.gameData.ScoreList"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity android:name="sudoku.controller.activities.TheScoreList"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        
+        <activity android:name="sudoku.controller.activities.FirstMenu"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+    </application>
+
+</manifest>
